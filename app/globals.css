@@ -1,3 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --grid-template-columns-app: minmax(18rem, 20rem) 1fr;
+}
