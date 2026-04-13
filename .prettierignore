@@ -1,1 +1,56 @@
-node_modules`n.next`ndist
+# Pastas de Dependências
+node_modules/
+dist/
+build/
+out/
+.next/
+.svelte-kit/
+
+# Arquivos de Sistema e IDEs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.history/
+*.log
+
+# Controle de Versão
+.git/
+.svn/
+.hg/
+
+# Arquivos de Configuração de Pacotes
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# Ativos Estáticos (Imagens, Fontes, Vídeos)
+# Como você usa muitas imagens kawaii e assets, não faz sentido o Prettier tentar lê-los
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.webp
+*.mp4
+*.woff
+*.woff2
+*.ttf
+*.otf
+
+# Documentação e Markdowns Específicos
+CHANGELOG.md
+LICENSE
+README.md
+
+# Arquivos de Build/Cache do Tailwind e Ferramentas
+.cache/
+.parcel-cache/
+.eslintcache/
+.stylelintcache/
+
+# Se você estiver usando o Gulp em algum projeto antigo (como o EBAC Motors)
+# Ignore a pasta onde os arquivos são processados
+public/

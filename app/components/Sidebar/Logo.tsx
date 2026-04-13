@@ -18,5 +18,5 @@ export function Logo() {
       </svg>
       <span>Untitled UI</span>
     </strong>
-  )
+  );
 }
