@@ -22,16 +22,21 @@ export function SettingsTabs() {
 
   return (
     <Tabs.Root value={currentTab} onValueChange={setCurrentTab}>
-      <Tabs.List className="mt-6 flex items-center gap-4 border-b border-zinc-200">
-        {tabs.map((tab) => (
-          <TabItem
-            key={tab.value}
-            value={tab.value}
-            title={tab.title}
-            isSelected={currentTab === tab.value}
-          />
-        ))}
-      </Tabs.List>
+      <div className="relative mt-6">
+        <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-8 bg-gradient-to-r from-white to-transparent md:hidden" />
+        <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-8 bg-gradient-to-l from-white to-transparent md:hidden" />
+
+        <Tabs.List className="hide-scrollbar flex items-center gap-4 overflow-x-auto border-b border-zinc-200">
+          {tabs.map((tab) => (
+            <TabItem
+              key={tab.value}
+              value={tab.value}
+              title={tab.title}
+              isSelected={currentTab === tab.value}
+            />
+          ))}
+        </Tabs.List>
+      </div>
     </Tabs.Root>
   );
 }

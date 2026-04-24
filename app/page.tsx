@@ -11,14 +11,14 @@ import { Role, Country, Timezone } from "./components/Form/Select";
 
 export default function Home() {
   return (
-    <div className="mx-auto flex max-w-5xl flex-col gap-8 px-4 py-8">
-      <header className="space-y-4">
+    <div className="mx-auto flex max-w-5xl flex-col items-center gap-8 px-4 py-8 lg:items-stretch">
+      <header className="w-full space-y-4 text-center lg:text-left">
         <h1 className="text-3xl font-semibold text-zinc-900">Settings</h1>
         <SettingsTabs />
       </header>
 
-      <div className="flex flex-col">
-        <div className="flex flex-col items-start justify-between gap-4 border-b border-zinc-200 pb-5 lg:flex-row lg:items-center">
+      <div className="flex w-full flex-col">
+        <div className="flex flex-col items-center justify-between gap-4 border-b border-zinc-200 pb-5 text-center lg:flex-row lg:items-center lg:text-left">
           <div className="space-y-1">
             <h2 className="text-lg font-semibold text-zinc-900">
               Personal info
@@ -48,7 +48,7 @@ export default function Home() {
           id="settings"
           className="mt-px flex w-full flex-col divide-y divide-zinc-200"
         >
-          <div className="lg:grid-cols-form flex flex-col gap-3 py-6 lg:grid">
+          <div className="lg:grid-cols-form flex flex-col items-center gap-3 py-6 text-center lg:grid lg:items-start lg:text-left">
             <label htmlFor="firstName" className="font-medium text-zinc-700">
               Name
             </label>
@@ -62,7 +62,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="lg:grid-cols-form flex flex-col gap-3 py-6 lg:grid">
+          <div className="lg:grid-cols-form flex flex-col items-center gap-3 py-6 text-center lg:grid lg:items-start lg:text-left">
             <label
               htmlFor="email"
               className="text-sm font-medium text-zinc-700"
@@ -79,7 +79,7 @@ export default function Home() {
             </InputRoot>
           </div>
 
-          <div className="lg:grid-cols-form flex flex-col gap-3 py-6 lg:grid">
+          <div className="lg:grid-cols-form flex flex-col items-center gap-3 py-6 text-center lg:grid lg:items-start lg:text-left">
             <div className="space-y-1">
               <label
                 htmlFor="photo"
@@ -92,14 +92,14 @@ export default function Home() {
               </span>
             </div>
 
-            <FileInput.Root className="flex flex-col items-start gap-5 lg:flex-row">
+            <FileInput.Root className="flex flex-col items-center gap-5 lg:flex-row lg:items-start">
               <FileInput.ImagePreview />
               <FileInput.Trigger />
               <FileInput.Control />
             </FileInput.Root>
           </div>
 
-          <div className="lg:grid-cols-form flex flex-col gap-3 py-6 lg:grid">
+          <div className="lg:grid-cols-form flex flex-col items-center gap-3 py-6 text-center lg:grid lg:items-start lg:text-left">
             <label htmlFor="Role" className="text-sm font-medium text-zinc-700">
               Role
             </label>
@@ -111,7 +111,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="lg:grid-cols-form flex flex-col gap-3 py-6 lg:grid">
+          <div className="lg:grid-cols-form flex flex-col items-center gap-3 py-6 text-center lg:grid lg:items-start lg:text-left">
             <label
               htmlFor="Country"
               className="text-sm font-medium text-zinc-700"
@@ -126,7 +126,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="lg:grid-cols-form flex flex-col gap-3 py-6 lg:grid">
+          <div className="lg:grid-cols-form flex flex-col items-center gap-3 py-6 text-center lg:grid lg:items-start lg:text-left">
             <label
               htmlFor="timezone"
               className="text-sm font-medium text-zinc-700"
@@ -141,7 +141,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="lg:grid-cols-form flex flex-col gap-3 py-6 lg:grid">
+          <div className="lg:grid-cols-form flex flex-col items-center gap-3 py-6 text-center lg:grid lg:items-start lg:text-left">
             <div className="space-y-1">
               <label
                 htmlFor="bio"
@@ -159,7 +159,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="lg:grid-cols-form flex flex-col gap-3 py-6 lg:grid">
+          <div className="lg:grid-cols-form flex flex-col items-center gap-3 py-6 text-center lg:grid lg:items-start lg:text-left">
             <label
               htmlFor="project"
               className="text-sm font-medium text-zinc-700"
@@ -176,7 +176,7 @@ export default function Home() {
             </FileInput.Root>
           </div>
 
-          <div className="flex items-center justify-end gap-2 pt-5">
+          <div className="flex items-center justify-center gap-2 py-2 md:justify-end">
             <button
               type="button"
               className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm transition-colors hover:bg-zinc-50"
