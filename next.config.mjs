@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/nome-do-seu-repositorio',
+  basePath: '/tailwind_ui',
   images: {
     unoptimized: true,
   },
