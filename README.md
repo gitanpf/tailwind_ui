@@ -26,4 +26,4 @@ Esta aplicação foi construída para simular um painel de configurações de co
 2.  **Clean UI:** Aplicação de espaçamentos e tipografia que reduzem a carga cognitiva.
 3.  **Acessibilidade:** Elementos de formulário estruturados para navegação via teclado e leitura clara.
 
-* Link: https://gitanpf.github.io/tailwind_ui/
+**Link:** https://gitanpf.github.io/tailwind_ui/
