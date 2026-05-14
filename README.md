@@ -27,3 +27,4 @@ Esta aplicação foi construída para simular um painel de configurações de co
 3.  **Acessibilidade:** Elementos de formulário estruturados para navegação via teclado e leitura clara.
 
 ## Link: 
+https://gitanpf.github.io/tailwind_ui/
